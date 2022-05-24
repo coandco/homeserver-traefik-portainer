@@ -32,7 +32,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/nextcloud/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -50,7 +50,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/cyberchef/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -68,7 +68,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/cadvisor/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -86,7 +86,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/gogs/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -104,7 +104,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/pypiserver/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -126,8 +126,8 @@
                     "name": "DNS_CHALLENGE_PROVIDER"
                 },
                 {
-                    "label": "CF_DNS_API_TOKEN",
-                    "name": "CF_DNS_API_TOKEN"
+                    "label": "DREAMHOST_API_KEY",
+                    "name": "DREAMHOST_API_KEY"
                 }
             ],
             "note": "First you will need a domain.",
@@ -135,7 +135,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/traefik/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -153,7 +153,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/registry/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -179,7 +179,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/minio/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -197,7 +197,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/dozzle/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -215,7 +215,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/heimdall/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         },
         {
@@ -253,7 +253,7 @@
             "platform": "linux",
             "repository": {
                 "stackfile": "stacks/photoprism/docker-compose.yml",
-                "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+                "url": "https://github.com/coandco/homeserver-traefik-portainer"
             }
         }
     ]
