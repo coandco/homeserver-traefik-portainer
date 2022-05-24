@@ -27,8 +27,8 @@ services:
       - --api.dashboard=true
       - --providers.docker.constraints=Label(`my.zone`, `homeserver`)
     ports:
-      - "80:80"
-      - "443:443"
+      - "81:80"
+      - "444:443"
     networks:
       - traefik
     security_opt:
