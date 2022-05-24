@@ -37,7 +37,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - traefik-letsencrypt:/letsencrypt
     environment:
-      - CF_DNS_API_TOKEN=${CF_DNS_API_TOKEN}
+      - DREAMHOST_API_KEY=${DREAMHOST_API_KEY}
     labels:
       my.zone: homeserver
       traefik.enable: true
