@@ -17,15 +17,15 @@
       "name": "DNS_CHALLENGE_PROVIDER"
     },
     {
-      "label": "CF_DNS_API_TOKEN",
-      "name": "CF_DNS_API_TOKEN"
+      "label": "DREAMHOST_API_KEY",
+      "name": "DREAMHOST_API_KEY"
     }
   ],
   "note": "First you will need a domain.",
-  "logo": "https://raw.githubusercontent.com/tomwojcik/homeserver-traefik-portainer/9185fa3c58efc61e4eadcb9aaf00232c2cc046b1/stacks/traefik/logo.png",
+  "logo": "https://raw.githubusercontent.com/coandco/homeserver-traefik-portainer/9185fa3c58efc61e4eadcb9aaf00232c2cc046b1/stacks/traefik/logo.png",
   "platform": "linux",
   "repository": {
     "stackfile": "stacks/traefik/docker-compose.yml",
-    "url": "https://github.com/tomwojcik/homeserver-traefik-portainer"
+    "url": "https://github.com/coandco/homeserver-traefik-portainer"
   }
 }
