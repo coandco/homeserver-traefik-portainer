@@ -9,6 +9,14 @@
       "name": "SERVER_DOMAIN"
     },
     {
+      "label": "LOCAL_DOMAIN",
+      "name": "LOCAL_DOMAIN"
+    },
+    {
+      "label": "CONF_DIR",
+      "name": "CONF_DIR"
+    },
+    {
       "label": "ACME_EMAIL",
       "name": "ACME_EMAIL"
     },

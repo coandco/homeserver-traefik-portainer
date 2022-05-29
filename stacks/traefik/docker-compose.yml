@@ -26,6 +26,8 @@ services:
       - "--certificatesresolvers.myresolver.acme.dnschallenge.delayBeforeCheck=0"
       - --api.dashboard=true
       - --providers.docker.constraints=Label(`my.zone`, `homeserver`)
+      - --providers.file.directory=/configs
+      - --providers.file.watch=true
     ports:
       - "81:80"
       - "444:443"
@@ -35,6 +37,7 @@ services:
       - no-new-privileges:true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - ${CONF_DIR}:/configs
       - traefik-letsencrypt:/letsencrypt
     environment:
       - DREAMHOST_API_KEY=${DREAMHOST_API_KEY}
@@ -45,7 +48,9 @@ services:
       traefik.http.routers.traefik.tls: true
       traefik.http.routers.traefik.tls.domains[0].main: ${SERVER_DOMAIN}
       traefik.http.routers.traefik.tls.domains[0].sans: "*.${SERVER_DOMAIN}"
-      traefik.http.routers.dashboard.rule: Host(`traefik.${SERVER_DOMAIN}`)
+      traefik.http.routers.traefik.tls.domains[1].main: ${LOCAL_DOMAIN}
+      traefik.http.routers.traefik.tls.domains[1].sans: "*.${LOCAL_DOMAIN}"
+      traefik.http.routers.dashboard.rule: Host(`traefik.${LOCAL_DOMAIN}`)
       traefik.http.routers.dashboard.service: api@internal
       traefik.http.routers.traefik.tls.certresolver: myresolver
       traefik.http.routers.traefik.service: api@internal

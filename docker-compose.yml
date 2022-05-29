@@ -22,7 +22,7 @@ services:
     labels:
       my.zone: homeserver
       traefik.enable: true
-      traefik.http.routers.portainer.rule: Host(`portainer.${SERVER_DOMAIN}`)
+      traefik.http.routers.portainer.rule: Host(`portainer.${LOCAL_DOMAIN}`)
       traefik.http.routers.portainer.entrypoints: websecure
       traefik.http.services.portainer.loadbalancer.server.port: 9000
 
